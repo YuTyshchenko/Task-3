@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>
+            Урок "Формы": теги и их атрибуты.
+        </h1>
+        <h2>
+            Расскажите немного о себе...
+        </h2>
+        <p>
+            Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.
+        </p>
+        <form
+            name="test"
+            method="post"
+        >
+            <fieldset>
+                <legend>
+                    <b>
+                        Коротко о себе
+                    </b>
+                </legend>
+                <label for="user_name">
+                    Имя:
+                </label>
+                <input 
+                    type="text" 
+                    id="user_name" 
+                    name="user_name"
+                    maxlength="10"
+                    minlength="5"
+                    required
+                >
+                </br>
+                </br>
+                <label for="last_name">
+                    Фамилия:
+                </label>
+                <input 
+                    type="text" 
+                    id="last_name" 
+                    name="last_name" 
+                    maxlength="15"
+                    minlength="5"
+                    required
+                >
+                </br>
+                </br>
+                <span>
+                    Пол:
+                </span>
+                <input 
+                    type="radio"
+                    id="man"
+                    name="sex" 
+                    value="Мужской"
+                    required
+                > 
+                <label for="man">
+                    Мужской
+                </label>
+                <input 
+                    type="radio"
+                    id="woman" 
+                    name="sex" 
+                    value="Женский"
+                    required
+                > 
+                <label for="woman">
+                    Женский
+                </label>
+                </br>
+                </br>
+                <label for="age">
+                    Возраст: 
+                </label>
+                <input 
+                    type="number"
+                    id="age" 
+                    name="age"
+                    min="1"
+                    required
+                > 
+                <span>
+                    лет
+                </span>
+            </fieldset>
+            </br>
+            <button type="submit">
+                Отправить
+            </button>
+        </form>
+    </body>
+</html>
+
+    
